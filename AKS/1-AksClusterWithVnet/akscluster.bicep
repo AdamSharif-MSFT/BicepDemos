@@ -6,7 +6,7 @@ resource bicepAksCluster 'Microsoft.ContainerService/managedClusters@2021-03-01'
   name: 'biceptestcluster'
   location: location
   properties: {
-    kubernetesVersion: '1.19.9'
+    kubernetesVersion: '1.20.5'
     dnsPrefix: 'aks${uniqueString(resourceGroup().id)}'
     networkProfile: {
       networkMode: 'transparent'
